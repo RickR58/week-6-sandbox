@@ -234,3 +234,54 @@ function myFunction() {
 }
 myFunction();
 //END JavaScript JS3 - Functions (Pt. 1)
+
+function myFunctionWithParams(num1, num2) {
+  //the parameters are like vars that could be anything
+  return num1 + num2; // This is saying, when invoked, do THIS with the parameters
+}
+var result = myFunctionWithParams(29, 3); //THis is assigning values to the parameters
+console.log(result); // This is outputting whatever we told it to do in the above line
+
+/*A Function named calculateTip has already been declared. The Function takes in a parameter called amount and calculates a 20% tip (rounded) of whatever value is passed in. However, as is the Function will not run and nothing will print to the console. To fix this, do the following:
+1. Invoke the Function by name
+2. The given variable totalBill will be used as the argument
+3. Pass in the argument when you call the Function
+4. Lastly, make sure the result prints to the console by using console.log()*/
+
+//
+/*function calculateTip(amount) {
+  return Math.ceil(tip);
+}
+var totalBill = amount + tip
+var tip = amount * 0.2;
+console.log(tip + amount);
+//need to have something that will take the parameter "amount" and add it to the "totalBill"
+
+var result = calculateTip;
+console.log(result);
+
+function sumOfTwo(a, b) {
+  return a + b;
+}
+console.log(sumOfTwo(num1, num2));*/
+
+function multiplyByTwo(param1) {
+  return param1 * 2;
+}
+let arg1 = 15; //I added this bit so it would work here but not needed in asst
+console.log(multiplyByTwo(arg1));
+
+/*Write a Function named speakFriend that takes one parameter.
+1. In the body of the Function, return the String "Access Denied"
+2. Except if the passed in value is equal to "Mellon", then return the String "Enter"
+3. Note: The Function has already been invoked for you, using the given variable a as the argument (see the last line of code)*/
+
+/* function speakFriend(a) {
+  var a = "john";
+  if (a != "Mellon") {
+    return "Access Denied";
+  } else {
+    return "Enter";
+  }
+}
+console.log(speakFriend(a));  */
