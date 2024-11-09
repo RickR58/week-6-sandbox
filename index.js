@@ -285,3 +285,65 @@ console.log(multiplyByTwo(arg1));
   }
 }
 console.log(speakFriend(a));  */
+
+//JavaScript JS3 - Functions (Pt. 2)
+
+let argument1 = 2;
+let argument2 = 7;
+function myFunkShun(parameter1, parameter2) {
+  //this is inside the function body. THis is where the code goes
+
+  return (returnValue = argument1 + "no dice!"); //IF you want the function to return a value (but what if you don't?)
+}
+myFunkShun(argument1, argument2); //this statement calls the function. I assume that arguments 1 and 2 are the values of the parameters.
+console.log(argument1 * argument2);
+//new test
+
+function myCount() {
+  for (let i = 0; i <= 10; i++) {
+    console.log(i);
+  }
+}
+myCount(); //called/invoked the function
+//next!
+
+//questions 11 Just keep looping
+/*
+function loopUntilX(x) {
+  for (let x = 0; x < 10; x++);
+  {
+    if ((x = 10));
+    return x + 2;
+  }
+}
+console.log(loopUntilX(x));
+
+for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log("Walking east one step");
+}*/
+
+//instructor solution, This didn't work either!
+/*
+function loopUntilX(x) {
+  for (let i = 0; i < x; i++) {
+    console.log(i);
+  }
+  return true;
+}
+console.log(loopUntilX(x));
+*/
+
+/*Function: findCircumference
+
+Create a Function named findCircumference that takes in a parameter radius.
+• The Function should return the circumference of a circle, given a radius.
+• Note: The Function has already been invoked for you, using the given variable a as the argument (see the last line of code)
+Tip: The formula to find the circumference of a circle is PI * 2r where r is the radius.
+Use Math.PI to properly calculate for PI. */
+
+function findCircumference() {
+  return Math.PI;
+}
+
+console.log(findCircumference(a));
