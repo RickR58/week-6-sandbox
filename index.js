@@ -466,6 +466,8 @@ console.log(myList[myList.length - 1]);
 */
 
 /*
+//push() adds elements to end. unshift() adds elements to the begining of an array.
+
 var myArray = ["apple", "banana", "orange"];
 
     myArray.push("pear");
@@ -473,4 +475,21 @@ var myArray = ["apple", "banana", "orange"];
 
     myArray.unshift("lime", "kiwi");
     console.log(myArray); // Output: ["lime", "kiwi", "apple", "banana", "orange", "pear"]
+    
+// splice() can add, remove, or replace elements: Example of adding   
+    
+var myArray = ['apple', 'banana', 'orange', 'lime'];
+
+    myArray.splice(1, 0, 'pear', 'kiwi'); // 1 = the index number, 0 = the number of elements to be removed.
+
+    console.log(myArray);  // Output: ['apple', 'pear', 'kiwi', 'banana', 'orange', 'lime']
+    
+    // splice() can add, remove, or replace elements: Example of removing
+
+    var myArray = ['apple', 'banana', 'orange', 'lime'];
+
+      myArray.splice(2, 1); //first element is index of element to be removed. The second element is the number of elements to be removed
+   
+      console.log(myArray);  // Output: ['apple', 'banana', 'lime']
+    
     */
