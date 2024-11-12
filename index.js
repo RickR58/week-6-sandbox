@@ -27,7 +27,7 @@ function checkCanDrive(age) {
   } else {
   console.log('This person cannot legally drive');
 */
-
+/*
 let fullName = "Mary" + "  " + "Beige";
 let gradesArray = [100, 79, 80, 90, 65];
 const isPassing = (currentValue) => currentValue >= 70;
@@ -43,7 +43,7 @@ if (gradesArray.every(isPassing)) {
 } else {
   console.log("\tNot all grades are passing. A passing grade is >= 70!");
 }
-
+*/
 /*function lowestGrade(gradeBook) {
   if (gradeBook.length > 0) {
     let lowGrade = gradeBook[0];
@@ -226,7 +226,7 @@ console.log(removedElement);
 
 //end arrays. NOTES:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 */
-
+/*
 //START JavaScript JS3 - Functions (Pt. 1)
 
 function myFunction() {
@@ -264,6 +264,7 @@ function sumOfTwo(a, b) {
   return a + b;
 }
 console.log(sumOfTwo(num1, num2));*/
+/*
 
 function multiplyByTwo(param1) {
   return param1 * 2;
@@ -287,6 +288,7 @@ console.log(multiplyByTwo(arg1));
 console.log(speakFriend(a));  */
 
 //JavaScript JS3 - Functions (Pt. 2)
+/*
 
 let argument1 = 2;
 let argument2 = 7;
@@ -307,6 +309,7 @@ function myCount() {
 myCount(); //called/invoked the function
 //next!
 
+*/
 //questions 11 Just keep looping
 /*
 function loopUntilX(x) {
@@ -340,10 +343,134 @@ Create a Function named findCircumference that takes in a parameter radius.
 • The Function should return the circumference of a circle, given a radius.
 • Note: The Function has already been invoked for you, using the given variable a as the argument (see the last line of code)
 Tip: The formula to find the circumference of a circle is PI * 2r where r is the radius.
-Use Math.PI to properly calculate for PI. */
+Use Math.PI to properly calculate for PI. 
+FOUND ANSWER ON MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
+*/
+/*
+function findCircumference(radius) {
 
-function findCircumference() {
-  return Math.PI;
+  //RADIUS was the parameter as it said in the INSTURCTIONS!
+  return 2 * Math.PI * radius;
 }
 
-console.log(findCircumference(a));
+console.log(findCircumference(a)); //a is the var
+*/
+
+/* Function: checkout
+
+Create a Function named checkout that accepts two parameters named cardBalance and price.
+If the price is more than the card balance, return false
+Otherwise, return the new card balance after the purchase
+Note: The Function has already been invoked for you, using the given variables a and b as the arguments (see the last line of code) */
+
+//create a new function named checkout.
+/* I posted
+
+function checkout(cardBalance, price) {  
+  if (price > cardBalance) {
+    return false;
+  } else { 
+    return(cardBalance > price) {
+  }
+  }
+
+//Insturcto posted
+function checkout(cardBalance, price){
+    if (price > cardBalance) { 
+        return false; 
+    } else { 
+        return cardBalance - price; //I DID THIS!!!!
+    }
+}
+
+console.log(checkout(a,b,40));
+*/
+/*Function: isBlue
+
+Create a Function named isBlue.
+isBlue will take one parameter
+The Function will return true if it is passed any case of the word "blue"
+Otherwise, the Function will return false
+Invoke the Function, pass in the given variable word as the argument
+Print the result to the console, using console.log
+The passed value can be "blue" with any of the letters capitalized as well. (i.e."Blue", "bLue", "BLUE", etc…) All forms of the word blue should return true. Use toLowerCase() on the passed value to accomplish this. For example, myVariable.toLowerCase() will convert whatever the variable myVariable contains to all lowercase. */
+/*
+function isBlue() {
+  console.log(isBlue);
+  if (isBlue == "blue") {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isBlue.toLowerCase());
+
+Instructor solution
+function isBlue(var1){
+  return var1.toLowerCase() === "blue";
+}
+console.log(isBlue(word)); //how the hell would I know any of this?
+
+*/
+/*FUnction.returnSum. Create a Function named returnSum that accepts 3 integer parameters.
+The parameters are named num1, num2, and num3
+In the body of the Function, the sum of the three parameters is returned
+Invoke the Function, pass in the given variables a, b, and c as the arguments
+Print the result to the console, using console.logSOlved correctly 
+
+function returnSum(num1, num2, num3) {
+  return a + b + c;
+}
+console.log(returnSum(a + b + c));
+*/
+
+/*Grocery List Array:
+Declare an Array called groceryList with the following three elements, "granola", "milk", and "eggs".*/
+/*
+var groceryList = ["granola", "milk", "eggs"];
+console.log(groceryList);
+//Output = (3) ['granola', 'milk', 'eggs']
+*/
+
+let myArray = ["apple", "banana", "orange", "hippo"];
+
+console.log(myArray[0]); // Output: "apple"
+console.log(myArray[1]); // Output: "banana"
+console.log(myArray[3]); // Output: "orange"
+
+console.log(myArray); // Output: ["apple", "banana", "orange"]
+
+// Replace the second element "banana" with "grape"
+myArray[2] = "kiwi";
+console.log(myArray); // Output: ["apple", "grape", "orange"]
+
+console.log(myArray[myArray.length - 2]);
+
+let numbers = [1, 2, 3, 4, 5];
+numbers.length = 4;
+console.log(numbers);
+
+/*Given an Array called myList, do the following:
+Print the length of myList to the console.
+Print the last element of myList to the console, programmatically.
+Note: Do not use the index 3 to accomplish this, as in myList[3]. Use the length property to dynamically get the index of the last element, no matter the length of the Array.*/
+
+var myList = [myList];
+
+console.log(myList);
+
+//Inst Sol
+console.log(myList.length);
+
+console.log(myList[myList.length - 1]);
+*/
+
+/*
+var myArray = ["apple", "banana", "orange"];
+
+    myArray.push("pear");
+    console.log(myArray); // Output: ["apple", "banana", "orange", "pear"]
+
+    myArray.unshift("lime", "kiwi");
+    console.log(myArray); // Output: ["lime", "kiwi", "apple", "banana", "orange", "pear"]
+    */
