@@ -431,7 +431,7 @@ var groceryList = ["granola", "milk", "eggs"];
 console.log(groceryList);
 //Output = (3) ['granola', 'milk', 'eggs']
 */
-
+/*
 let myArray = ["apple", "banana", "orange", "hippo"];
 
 console.log(myArray[0]); // Output: "apple"
@@ -454,7 +454,7 @@ console.log(numbers);
 Print the length of myList to the console.
 Print the last element of myList to the console, programmatically.
 Note: Do not use the index 3 to accomplish this, as in myList[3]. Use the length property to dynamically get the index of the last element, no matter the length of the Array.*/
-
+/*
 var myList = [myList];
 
 console.log(myList);
@@ -493,3 +493,267 @@ var myArray = ['apple', 'banana', 'orange', 'lime'];
       console.log(myArray);  // Output: ['apple', 'banana', 'lime']
     
     */
+/*
+let myArray = ["apple", "banana", "orange"];
+
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i]);
+}
+
+let newArray = ["GoatSmeller", "Abercrombie", "apple pan dowdy"];
+
+for (let name of newArray) {
+  console.log(name);
+}
+*/
+/* Write a Function to Print the Elements of an Array: Write a Function called printArray that accepts an Array as an argument, and contains a loop that will print each value of the passed in Array.
+• Do not edit (or hardcode the change to) the Array in its current state.
+• You must edit by using a method of the Array object.
+• Note: Arrays are mutable in JavaScript, so you can use a method to add a new name to an Array.
+• Hint: You can use the length property to find the length of the Array. */
+/*
+function printArray(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+}
+
+let arr1 = [1, 2, 3];
+let arr2 = ["dog", "cat", "Rat"];
+let newArr = arr2.concat(arr1);
+
+console.log(newArr);
+*/
+
+/*
+//Write a Function to Join Two Arrays: Write a Function called joinArrays that accepts two Arrays as arguments.
+• In the Function body, declare a variable called newArray
+• Use an Array method that will join the elements of the two Arrays together and assign that to newArray
+• Finally in the body of the Function, return the Array newArray
+    Hint: You can use concat() to join two Arrays. (I used AI to write it.)
+
+function joinArrays(arr1, arr2) {
+  return arr1.concat(arr2);
+}
+console.log(joinArrays(input, staticArray));
+*/
+/*
+let numbers = [3, 25, 4, 12, 5, 2, 6, 11, 21, 5, 1, 15];
+numbers.sort();
+console.log(numbers);
+
+let values = [3, 25, 4, 12, 5, 2, 6, 11, 21, 5, 1, 15];
+values.sort((a, b) => a - b);
+values.reverse(); //I added this line in to see what happens
+console.log(values);
+
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+fruits.reverse();
+console.log(fruits);
+
+// using the sort() method with a Function passed through
+let numberrs = [3, 25, 4, 12, 5, 2, 6, 11, 21, 5, 1, 15];
+numberrs.sort((a, b) => a - b);
+console.log(numberrs); // Output: [1,2,3,4,5,5,6,11,12,15,21,25]
+
+const letters = [];
+letters.sort();
+const numberators = [];
+numberators.sort = (a, b) => a - b;
+*/
+// Write a Function to Sort an Array: Write a Function called sortArray that accepts an Array as an argument. Within the Function body, use an Array method that will sort a passed in Array alphabetically or numerically. Finally in the body of the Function, return the sorted Array. INST Response to number 15.....
+
+/*
+function sortArray(array){
+  return array.sort();
+}
+
+//Write a Function called reverseArray that accepts an Array as an argument. reverse the Array using an Array method. Return the reversed Array.
+
+function reverseArray(array) {
+  return array.reverse();
+}
+
+*/
+
+/* 19. Array Fun: Using the given Function named gradList and Array named grads do the following:
+Add the names "Beatriz", "Yolanda", "Rizo" to the passed in Array that is referred to as graduates in the Function (it is the parameter).
+Then, sort the students from Z-A (in reverse)
+Finally, in the Function return the modified Array. */
+
+/*
+grads.push("Beatriz", "Yolanda", "Rizo"); 
+grads.sort((a, b) => a - b);
+grads.reverse();
+
+graduates.push("Beatriz", "Yolanda", "Rizo");
+    graduates.sort();
+    
+    let reverseGrads = graduates.reverse();
+    
+    return reverseGrads;
+} That was a stupid one*/
+
+////
+/*
+let addToPrint = (num1) => {
+  let sum = 0;
+  for (let i = 0; i < num1; i++) {
+    sum += num1;
+  }
+  return sum;
+};
+
+console.log(addToPrint(4));
+/////
+
+//convert arrow function//
+function myFunction(a, b) {
+  return a + b;
+}
+//my solve//
+let returnSum = (a, b) => {
+  return a + b;
+};
+////
+
+function myFunction(num) {
+  return Math.sqrt(num);
+}
+
+let findSquareRoot = (num) => expression;
+return Math.sqrt(num);
+///Converted to 1st is mine. 2nd is inst.
+const findSquareRoot = (num) => Math.sqrt(num);
+let findSquareRoot = (num) => Math.sqrt(num);
+*/
+
+//Convert the following Function myFunction into an arrow function. Refer to the new function as pythagoras.
+
+/*
+
+function myFunction(num1, num2) {
+      return Math.sqrt((num1 * num1) + (num2 * num2));
+ }
+///my solution
+ let pythagoras = (num1, num2) => {
+  num1*num1;
+  num2*num2;
+ }
+ return Math.sqrt;
+//Inst solution
+let pythagoras = (num1, num2) => Math.sqrt((num1 * num1) + (num2 * num2));
+*/
+
+//Template Literal: Convert the following Function myFunction into an arrow function. Refer to the new function as yourNumber.
+/* function myFunction(num) {
+  return `Your number is ${num}`;
+}
+
+let yourNumber = (num) => `Your number is + a`; // delivers 'your number is a'
+
+let yourNumber = (num) => `Your number is ${a}`; // delivers the correct response
+*/
+/*
+Convert the following Function myFunction into an arrow function. Refer to the new function as monthlyPayment.
+ function myFunction(yearlyPayment) {
+      let monthly = yearlyPayment / 12;
+      return monthly.toFixed(2);
+ }
+
+ let monthlyPayment = (yearlyPayment) => yearlyPayment / 12;
+  return number(monthly.toFixed(2));
+};
+var a = 23;
+let monthlyPayment = (yearlyPayment) => { //This'n worked thatnks to https://deepai.org/chat
+  return (yearlyPayment / 12).toFixed(2); //on this line we get the parameter divided by 12 and then tell it to display to 2 decimal places.
+}; 
+
+/*
+A More Complex Function:
+• Convert the following Function myFunction into an arrow function. 
+• Refer to the new function as fancyAlgorithm.
+
+ function myFunction(num1, num2, num3) {
+     let value = 0;
+     for  (let index = 0; index < num3; index++) {
+         value = (value + num2) * num1;
+     }
+     return value /  (num1 * (num3 * 10));
+}
+     */
+/*
+
+function fancyAlgorithm = (num1, num2, num3) => {
+  let value = 0;
+  for (let index = 0; index < num3; index++) {
+    value = (value + num 2) * num1;
+  }
+  return value / (num1 * (num3 * 10));
+  }
+}
+function fancyAlgorithm = (num1, num2, num3) => let i = 0; {
+  for (let i = 0; i < num3; i++) {
+    let value = (i + num 2) * num1;
+  }
+  return i / (num1 * (num3 * 10));
+}
+
+//This one worked thanks to AI. Notice that if there is nothing specific following the =>, use curly braces and give the value informaiton. I think. 
+  const fancyAlgorithm = (num1, num2, num3) => {
+    let value = 0;
+    for (let index = 0; index < num3; index++) {
+        value = (value + num2) * num1;
+    }
+    return value / (num1 * (num3 * 10));
+};
+*/
+
+/*Adding is Multiplying:
+
+Convert the following Function myFunction into an arrow function. Refer to the new function as multiplyByAdding.
+function myFunction(a, b) {
+    let result = 0;
+    for (let i = 0; i < b; i++) {
+       result += a;
+    }
+    return result;
+}
+
+
+Correct response
+const multiplyByAdding = (a, b) => {
+  let result = 0;
+  for (let i = 0; i < b; i++) 
+  result += a;{
+   return result;
+  }
+};
+*/
+
+/* Revert:
+/*
+Convert the following Function myFunction into an arrow function. Refer to the new function as revert.
+ function myFunction(value){
+      return !value; 
+      /*
+
+      function revert = value => { //use CONST instead of FUNCTION as in the next working example.)
+        return !value;
+      };
+
+      const revert = value => { 
+        return !value;
+    };
+//   BUT!!! a simpler way is...
+          let revert = (value) => !value; 
+*/
+/* Exclusive OR:
+
+Convert the following Function myFunction into an arrow function. Refer to the new function as xor.
+function myFunction(num1, num2) {
+    return num1 ^ num2;
+}
+    
+let xor = (num1, num2) => num1 ^ num2; //easy peasy
+*/
