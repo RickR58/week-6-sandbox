@@ -757,3 +757,13 @@ function myFunction(num1, num2) {
     
 let xor = (num1, num2) => num1 ^ num2; //easy peasy
 */
+
+/* Perfect Square:
+Convert the following Function myFunction into an arrow function.The challenge here is to get this down to only one line of code
+Refer to the new function as perfectSquare
+function myFunction(param) {
+   let total = Math.pow(param, 2);
+   return total;
+}
+*/
+let perfectSquare = (param) => Math.pow(param, 2);
